@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background"
+    android:gravity="bottom">
+
+    <LinearLayout
+        android:id="@+id/activity_register"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.skylinetan.energycloud.ui.activity.RegisterActivity">
+
+
+        <com.skylinetan.energycloud.ui.widget.MaterialTextField
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="10dp"
+            app:mtf_cardCollapsedHeight="4dp"
+            app:mtf_hasFocus="false"
+            app:mtf_image="@mipmap/ic_login_phone"
+            app:mtf_labelColor="@color/white">
+
+            <EditText
+                android:id="@+id/register_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Phone"
+                android:singleLine="true"
+                android:textColor="#333"
+                android:textColorHint="#666"
+                android:textSize="16sp" />
+
+        </com.skylinetan.energycloud.ui.widget.MaterialTextField>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <com.skylinetan.energycloud.ui.widget.MaterialTextField
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            app:mtf_cardCollapsedHeight="4dp"
+            app:mtf_hasFocus="false"
+            app:mtf_image="@mipmap/ic_login_sms"
+            app:mtf_labelColor="@color/white">
+
+            <EditText
+                android:id="@+id/register_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Code"
+                android:singleLine="true"
+                android:textColor="#333"
+                android:textColorHint="#666"
+                android:textSize="16sp" />
+
+        </com.skylinetan.energycloud.ui.widget.MaterialTextField>
+
+        <cn.iwgang.countdownview.CountdownView
+            android:id="@+id/register_count_down"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_gravity="bottom"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="6dp"
+            android:visibility="gone"
+            app:isShowDay="false"
+            app:isShowHour="false"
+            app:isShowMillisecond="false"
+            app:isShowMinute="false"
+            app:isShowSecond="true"
+            app:suffixDay="天"
+            app:suffixGravity="top"
+            app:suffixHour="小时"
+            app:suffixMillisecond="毫秒"
+            app:suffixMinute="分钟"
+            app:suffixSecond="秒"
+            app:suffixTextColor="@color/white"
+            app:suffixTextSize="12sp"
+            app:timeTextColor="@color/white"
+            app:timeTextSize="20sp" />
+
+            <TextView
+                android:id="@+id/register_code_tv"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/round_bg"
+                android:text="Get code"
+                android:textSize="16sp"
+                android:textColor="@color/colorPrimary"/>
+
+        </LinearLayout>
+
+        <com.skylinetan.energycloud.ui.widget.MaterialTextField
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            app:mtf_cardCollapsedHeight="4dp"
+            app:mtf_hasFocus="false"
+            app:mtf_image="@mipmap/ic_nick_name"
+            app:mtf_labelColor="@color/white">
+
+            <EditText
+                android:id="@+id/nick_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nick Name"
+                android:singleLine="true"
+                android:textColor="#333"
+                android:textColorHint="#666"
+                android:textSize="16sp" />
+
+        </com.skylinetan.energycloud.ui.widget.MaterialTextField>
+
+        <com.skylinetan.energycloud.ui.widget.MaterialTextField
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            app:mtf_cardCollapsedHeight="4dp"
+            app:mtf_hasFocus="false"
+            app:mtf_image="@mipmap/ic_password"
+            app:mtf_labelColor="@color/white">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:singleLine="true"
+                android:inputType="textPassword"
+                android:textColor="#333"
+                android:textColorHint="#666"
+                android:textSize="16sp"
+                android:id="@+id/register_password" />
+
+        </com.skylinetan.energycloud.ui.widget.MaterialTextField>
+
+        <com.skylinetan.energycloud.ui.widget.MaterialTextField
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            app:mtf_cardCollapsedHeight="4dp"
+            app:mtf_hasFocus="false"
+            app:mtf_image="@mipmap/ic_password"
+            app:mtf_labelColor="@color/white">
+
+            <EditText
+                android:id="@+id/register_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Confirm Password"
+                android:singleLine="true"
+                android:inputType="textPassword"
+                android:textColor="#333"
+                android:textColorHint="#666"
+                android:textSize="16sp" />
+
+        </com.skylinetan.energycloud.ui.widget.MaterialTextField>
+
+        <Button
+            android:id="@+id/register_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/colorPrimary"
+            android:text="注册"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+</FrameLayout>

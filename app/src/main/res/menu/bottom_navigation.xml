@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_home"
+        android:title="@string/action_home"
+        android:icon="@mipmap/main_home" />
+    <item
+        android:id="@+id/action_monitor"
+        android:title="@string/action_monitor"
+        android:icon="@mipmap/main_monitor" />
+    <item
+        android:id="@+id/action_analysis"
+        android:title="@string/action_analysis"
+        android:icon="@mipmap/main_chart" />
+</menu>

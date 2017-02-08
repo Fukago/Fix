@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#607d8b</color>
+    <color name="colorPrimaryDark">#455a64</color>
+    <color name="colorAccent">#ff9800</color>
+    <!-- ffaa3e -->
+
+    <color name="showmethod_start_color">#FFFFFF</color>
+    <color name="showmethod_end_color">#C8C8C8</color>
+
+    <!-- ripple-->
+    <color name="bg_teal">#009688</color>
+    <color name="bg_teal_light">#B2DFDB</color>
+    <color name="bg_purple">#673AB7</color>
+    <color name="bg_white">#ffffff</color>
+    <color name="bg_yellow">#FFC107</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black_text">#666666</color>
+    <color name="grey_divider">#c6c6c6</color>
+    <color name="bg">#F0F0F0</color>
+
+    //字体的颜色由深至浅
+    <color name="grey_dark">#333333</color>
+    <color name="grey_light_1">#666666</color>
+    <color name="grey_light_2">#999999</color>
+
+    <color name="green">#0f9d58</color>
+    <color name="green_light">#00E676</color>
+
+    <color name="blue">#4285f4</color>
+    <color name="blue_light">#bbdefb</color>
+    <color name="pink">#ff80ab</color>
+    
+    <color name="blue_grey">#607D8B</color>
+    <color name="purple">#ce93d8</color>
+    <color name="grey">#ceb18c</color>
+</resources>

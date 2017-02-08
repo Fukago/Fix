@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">EnergyCloud</string>
+
+    <!-- main -->
+    <string name="action_settings">Settings</string>
+    <string name="action_user">User</string>
+    <string name="action_filter">Filter</string>
+    <!-- bottom navigation -->
+    <string name="action_home">首页</string>
+    <string name="action_monitor">监测</string>
+    <string name="action_analysis">分析</string>
+
+    <!-- main -->
+    <string name="main_energy_usage">用能状况</string>
+    <string name="main_electric_today">今日用电</string>
+    <string name="main_electric_this_month">本月用电</string>
+    <string name="main_electric_last_month">上月用电</string>
+
+    <string name="main_basic_information">基本信息</string>
+    <string name="main_building_name">建筑名称</string>
+    <string name="main_building_address">建筑地址</string>
+    <string name="main_building_area">建筑面积</string>
+    <string name="main_building_type">建筑类型</string>
+    <string name="main_use_num">用能人数</string>
+    <string name="main_more">更多</string>
+    <string name="main_collapse">收起</string>
+
+    <string name="error_load">加载失败了哦~</string>
+    <string name="empty_data">没有数据~</string>
+
+</resources>

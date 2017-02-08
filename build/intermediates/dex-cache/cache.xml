@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/apple/GitHub/EnergyCloud/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="772bed2d992b67b9d0327f766cc95cd63031dcd3">
+        <dex dex="/Users/apple/GitHub/EnergyCloud/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-25.0.1_d0fb05fdf2ac07f7ff817a1a8af97edf0123a716.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/apple/GitHub/EnergyCloud/app/build/intermediates/exploded-aar/com.android.support/design/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3b236883e0df6002cabb01ce57d00a5b1e5de610">
+        <dex dex="/Users/apple/GitHub/EnergyCloud/app/build/intermediates/pre-dexed/debug/com.android.support-design-25.0.1_3b3313598a77293c681867466dddf25ff2c6f5b8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/apple/GitHub/EnergyCloud/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c0bd6ffb002a85b5e7cad29f8558d1cc59539679">
+        <dex dex="/Users/apple/GitHub/EnergyCloud/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.1_fd70dea1f109e3c63f008e00db4520655bf474c9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/apple/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.9.0/f824591a0016efbaeddb8300bee54832a1398cfa/okio-1.9.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f824591a0016efbaeddb8300bee54832a1398cfa">
+        <dex dex="/Users/apple/GitHub/EnergyCloud/app/build/intermediates/pre-dexed/debug/okio-1.9.0_77ca30af9bb91a556b5b19ec2b7f8c9c72d3902b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/apple/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.4.1/c7c4f9e35c2fd5900da24f9872e3971801f08ce0/okhttp-3.4.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c7c4f9e35c2fd5900da24f9872e3971801f08ce0">
+        <dex dex="/Users/apple/GitHub/EnergyCloud/app/build/intermediates/pre-dexed/debug/okhttp-3.4.1_0913da27154a3ff44d857db66193f426836a80f7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/apple/GitHub/EnergyCloud/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="00d4c8eebf2b681073c72a26bd0849549e51c7cb">
+        <dex dex="/Users/apple/GitHub/EnergyCloud/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-utils-25.0.1_470b0ce6e6969a702abca0a88915632bbfef05c4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/apple/GitHub/EnergyCloud/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
+        <dex dex="/Users/apple/GitHub/EnergyCloud/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.1_fea5be80d0a99681eb7569f1c8375321a4587116.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/apple/GitHub/EnergyCloud/app/libs/baidumapapi_util_v4_1_1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d5630c44b212b90ad64c2bc2a994cbf28d1b08a7">
+        <dex dex="/Users/apple/GitHub/EnergyCloud/app/build/intermediates/pre-dexed/debug/baidumapapi_util_v4_1_1_9aa8e84f672ca8f9bf082f19b50f1ddae17f0d4c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/apple/GitHub/EnergyCloud/app/build/intermediates/exploded-aar/io.reactivex/rxandroid/1.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="5a2386ad9bfff580b206a7fe305cdccd00798159">
+        <dex dex="/Users/apple/GitHub/EnergyCloud/app/build/intermediates/pre-dexed/debug/io.reactivex-rxandroid-1.2.1_4576ad54d6a1166d7524b51354039c1766952574.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/apple/GitHub/EnergyCloud/app/build/intermediates/exploded-aar/com.android.support/transition/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c1b6ab157e8e12cb08b9ee82bb5e3c5d22632eb3">
+        <dex dex="/Users/apple/GitHub/EnergyCloud/app/build/intermediates/pre-dexed/debug/com.android.support-transition-25.0.1_499de83dd89f47408ea1057cab12c76d98a212c2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/apple/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.7/751f548c85fa49f330cecbb1875893f971b33c4e/gson-2.7.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="751f548c85fa49f330cecbb1875893f971b33c4e">
+        <dex dex="/Users/apple/GitHub/EnergyCloud/app/build/intermediates/pre-dexed/debug/gson-2.7_4a9ab15c92577da9a73fa10142117b795593146b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/apple/GitHub/EnergyCloud/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b24e1c688744078e1fa833ffadf696794761bbe5">
+        <dex dex="/Users/apple/GitHub/EnergyCloud/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-25.0.1_dfac13d262a917c362dc933d00a058adbf71c7c6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/apple/GitHub/EnergyCloud/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f83b00041ecfba705603fec40363416c7de69719">
+        <dex dex="/Users/apple/GitHub/EnergyCloud/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.1_e7d4584e06ddbe0e565d8002a45f296db80a7090.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/apple/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/logging-interceptor/3.4.1/381fc1096ba65040d8e80ea43b2e1d9bad02345e/logging-interceptor-3.4.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="381fc1096ba65040d8e80ea43b2e1d9bad02345e">
+        <dex dex="/Users/apple/GitHub/EnergyCloud/app/build/intermediates/pre-dexed/debug/logging-interceptor-3.4.1_5e306382d96a2ed3f2431312e667e2a9a4d23ffd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/apple/GitHub/EnergyCloud/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c5b7145fb34779b6639147b8f2f8dd77c0db771b">
+        <dex dex="/Users/apple/GitHub/EnergyCloud/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.1_7f9c508dc087fc99c99e091954661a00c6bc5c1b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/apple/GitHub/EnergyCloud/app/build/intermediates/exploded-aar/com.diogobernardino/williamchart/2.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="5277f2d52578bcea0a8ad44069b61b9fe6d07b2a">
+        <dex dex="/Users/apple/GitHub/EnergyCloud/app/build/intermediates/pre-dexed/debug/com.diogobernardino-williamchart-2.3.0_ab8a92f288be4a2da7be2ac99062a9a4e24d2fb1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/apple/GitHub/EnergyCloud/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/apple/GitHub/EnergyCloud/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-25.0.1_fbdc209208013c2ff1c29927a79044bf39b3a0b5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/apple/GitHub/EnergyCloud/app/libs/baidumapapi_map_v4_1_1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="930064f0a91ff20ceb8dd4504b7dadec5aabea82">
+        <dex dex="/Users/apple/GitHub/EnergyCloud/app/build/intermediates/pre-dexed/debug/baidumapapi_map_v4_1_1_86a0cdd54535d6469d52f0422809f2a9b7cceb51.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/apple/GitHub/EnergyCloud/app/libs/baidumapapi_cloud_v4_1_1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="93ef91d018051b8b5e001eb5e106b983fee8a549">
+        <dex dex="/Users/apple/GitHub/EnergyCloud/app/build/intermediates/pre-dexed/debug/baidumapapi_cloud_v4_1_1_13baafe88bef07d4269b28b76e50ae4910e2af50.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/apple/GitHub/EnergyCloud/app/build/intermediates/exploded-aar/com.android.support/support-v13/25.0.0/jars/libs/internal_impl-25.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="67355078cd30daae43f62ba47a4663ee6edb976e">
+        <dex dex="/Users/apple/GitHub/EnergyCloud/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.0_8fc01bd35f7194c726e9fc5ce9738db4ad242092.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/apple/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/converter-simplexml/2.1.0/a71c37fa341165df2c61ba93f549c4ceeb98d6c8/converter-simplexml-2.1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a71c37fa341165df2c61ba93f549c4ceeb98d6c8">
+        <dex dex="/Users/apple/GitHub/EnergyCloud/app/build/intermediates/pre-dexed/debug/converter-simplexml-2.1.0_5e3ecdc3d294718fa92bd7339052ff8e13b6ac68.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/apple/GitHub/EnergyCloud/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="bc7e99e8d0fc279a05aa91378530f467ad62d443">
+        <dex dex="/Users/apple/GitHub/EnergyCloud/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-ui-25.0.1_55acec8a5102fd1c0ec30e3aa71b1a51885abac5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/apple/GitHub/EnergyCloud/app/build/intermediates/exploded-aar/com.github.iwgang/countdownview/2.1.2/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="313a0aad4620cba2bc02f818a5120a14f9dbd2bf">
+        <dex dex="/Users/apple/GitHub/EnergyCloud/app/build/intermediates/pre-dexed/debug/com.github.iwgang-countdownview-2.1.2_f56d6239b5e02bfaf54eece01249db6c5308ba3e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/apple/GitHub/EnergyCloud/app/build/intermediates/exploded-aar/com.afollestad.material-dialogs/core/0.9.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="16795a75616fe3ba9df9ae4af09202145e3a26dc">
+        <dex dex="/Users/apple/GitHub/EnergyCloud/app/build/intermediates/pre-dexed/debug/com.afollestad.material-dialogs-core-0.9.1.0_48078c0c43eab57aa382260675b0f6a3fe90ed04.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/apple/GitHub/EnergyCloud/app/build/intermediates/exploded-aar/com.github.bumptech.glide/okhttp3-integration/1.4.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="07a1832fdb6b44c0f4ec761ac3de02bfd3508269">
+        <dex dex="/Users/apple/GitHub/EnergyCloud/app/build/intermediates/pre-dexed/debug/com.github.bumptech.glide-okhttp3-integration-1.4.0_7de77d8fc15c8bd748fb4c957d4e0d6bd6d5f722.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/apple/GitHub/EnergyCloud/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="51eba4a4dd73044f90a9d58dd7ca34adbebfcf4e">
+        <dex dex="/Users/apple/GitHub/EnergyCloud/app/build/intermediates/pre-dexed/debug/com.android.support-support-compat-25.0.1_0f9e43013b35fae23d644378d23697b5f2a9c617.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/apple/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/converter-gson/2.1.0/aa557d71ead91cbf26e0c316a0f593d168303309/converter-gson-2.1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="aa557d71ead91cbf26e0c316a0f593d168303309">
+        <dex dex="/Users/apple/GitHub/EnergyCloud/app/build/intermediates/pre-dexed/debug/converter-gson-2.1.0_78760d86f3a6f6576deeeae00ee5f24c3a92e36d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/apple/GitHub/EnergyCloud/app/build/intermediates/exploded-aar/com.jakewharton/butterknife/8.4.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a07818a1ecabdb149998823429cce555af4b9cba">
+        <dex dex="/Users/apple/GitHub/EnergyCloud/app/build/intermediates/pre-dexed/debug/com.jakewharton-butterknife-8.4.0_e62baca54a332b076e56e76c0c9c092b135c4959.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/apple/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/retrofit/2.1.0/2de7cd8b95b7021b1d597f049bcb422055119f2c/retrofit-2.1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="2de7cd8b95b7021b1d597f049bcb422055119f2c">
+        <dex dex="/Users/apple/GitHub/EnergyCloud/app/build/intermediates/pre-dexed/debug/retrofit-2.1.0_ea4d76ec59af5042e93ce876c8703b206a344f11.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/apple/GitHub/EnergyCloud/app/libs/baidumapapi_search_v4_1_1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b73dac26619f94061d28c54a7982ae8e0e783903">
+        <dex dex="/Users/apple/GitHub/EnergyCloud/app/build/intermediates/pre-dexed/debug/baidumapapi_search_v4_1_1_9b6fb62f83aea801d931b36b401b211cb812f93f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/apple/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-urlconnection/3.4.1/63994437f62bc861bc20c605d12962f7246116d1/okhttp-urlconnection-3.4.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="63994437f62bc861bc20c605d12962f7246116d1">
+        <dex dex="/Users/apple/GitHub/EnergyCloud/app/build/intermediates/pre-dexed/debug/okhttp-urlconnection-3.4.1_7aac5dfe88e60bc6a1ddfd74e37cc18fa11d9546.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/apple/.gradle/caches/modules-2/files-2.1/com.github.PhilJay/MPAndroidChart/v3.0.1/369f9aa48a629b4e92557b37326f42dc3de796e4/MPAndroidChart-v3.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="369f9aa48a629b4e92557b37326f42dc3de796e4">
+        <dex dex="/Users/apple/GitHub/EnergyCloud/app/build/intermediates/pre-dexed/debug/MPAndroidChart-v3.0.1_9c1bbacf9d08f2fa359e1071c9d3a57845ce6b25.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/apple/GitHub/EnergyCloud/app/libs/baidumapapi_base_v4_1_1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="00cd7d6a741c6a922c9cf7b0db52a357ebf12cdb">
+        <dex dex="/Users/apple/GitHub/EnergyCloud/app/build/intermediates/pre-dexed/debug/baidumapapi_base_v4_1_1_2f58b69936f0ca749f77408121efec539db3fea5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/apple/.gradle/caches/modules-2/files-2.1/org.simpleframework/simple-xml/2.7.1/dd91fb744c2ff921407475cb29a1e3fee397d411/simple-xml-2.7.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="dd91fb744c2ff921407475cb29a1e3fee397d411">
+        <dex dex="/Users/apple/GitHub/EnergyCloud/app/build/intermediates/pre-dexed/debug/simple-xml-2.7.1_337d1faa5361578855f2efaa3e41d4e33034e165.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/apple/GitHub/EnergyCloud/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="6a1479afe9f1b3645e1cd9a87318976893472818">
+        <dex dex="/Users/apple/GitHub/EnergyCloud/app/build/intermediates/pre-dexed/debug/com.android.support-support-media-compat-25.0.1_fddc256dbd85a0cf18ace03a0b058ba5d7c6afb3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/apple/.gradle/caches/modules-2/files-2.1/com.jakewharton/butterknife-annotations/8.4.0/ea392375cf9ff59234a82e7928a204215ccc98cd/butterknife-annotations-8.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ea392375cf9ff59234a82e7928a204215ccc98cd">
+        <dex dex="/Users/apple/GitHub/EnergyCloud/app/build/intermediates/pre-dexed/debug/butterknife-annotations-8.4.0_19b3ffc5f2b3418e4c29c304a2c0e10bb6ce75ab.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/apple/.gradle/caches/modules-2/files-2.1/com.github.bumptech.glide/glide/3.7.0/9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4/glide-3.7.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4">
+        <dex dex="/Users/apple/GitHub/EnergyCloud/app/build/intermediates/pre-dexed/debug/glide-3.7.0_f231964c2701473cce363f629c4a38d8495d4408.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/apple/.gradle/caches/modules-2/files-2.1/io.reactivex/rxjava/1.1.8/f9dbae366a6a3d6b5041c5e8db0dcdfdc35c27b5/rxjava-1.1.8.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f9dbae366a6a3d6b5041c5e8db0dcdfdc35c27b5">
+        <dex dex="/Users/apple/GitHub/EnergyCloud/app/build/intermediates/pre-dexed/debug/rxjava-1.1.8_eda8497795017058a18aa335889784b63a88bb74.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/apple/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.0.1/support-annotations-25.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a09194311f8f89c3e6db09d79f50897a889d615e">
+        <dex dex="/Users/apple/GitHub/EnergyCloud/app/build/intermediates/pre-dexed/debug/support-annotations-25.0.1_21dad15e2ea32ae904a73ee63cef1d203888c805.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/apple/GitHub/EnergyCloud/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="297d4bcf6ed4e747a1bf7d0d094a2d911a8d3a8e">
+        <dex dex="/Users/apple/GitHub/EnergyCloud/app/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-25.0.1_dd84069505515ec13923588eaf9b4c50f2e9a987.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/apple/GitHub/EnergyCloud/app/build/intermediates/exploded-aar/me.zhanghai.android.materialprogressbar/library/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a846ddbf5bf88dee5f89d4dffe22c864f576d9b0">
+        <dex dex="/Users/apple/GitHub/EnergyCloud/app/build/intermediates/pre-dexed/debug/me.zhanghai.android.materialprogressbar-library-1.3.0_11d9ff168f2b37283055c95dc9961c51755e5815.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/apple/GitHub/EnergyCloud/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3af8cc51ef7088e56f132780da8c0bd858b6a6ad">
+        <dex dex="/Users/apple/GitHub/EnergyCloud/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.1_0444947b80c9286b1645de4d5ad2133c2ceac57f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/apple/GitHub/EnergyCloud/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="1108575c7dc7b7f5b378b3290ac90de81a9b8830">
+        <dex dex="/Users/apple/GitHub/EnergyCloud/app/build/intermediates/pre-dexed/debug/com.android.support-cardview-v7-25.0.1_c27cc27366a83bff57a51b10fb6e2ad69f9179c4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/apple/GitHub/EnergyCloud/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f7ac4b327fdb9e2ee386f5adc46164927658de4b">
+        <dex dex="/Users/apple/GitHub/EnergyCloud/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-25.0.1_933adf573ca5a8af65b37aad0ff5cbff739f3068.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/apple/GitHub/EnergyCloud/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="26c6eef571592c91f29e56fda0bac73321de0c92">
+        <dex dex="/Users/apple/GitHub/EnergyCloud/app/build/intermediates/pre-dexed/debug/com.android.support-support-fragment-25.0.1_9f46635750955d226136e9d770abe250a1234459.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/apple/GitHub/EnergyCloud/app/build/intermediates/exploded-aar/com.android.support/support-v13/25.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="6ac094121e75b4b87432beb9305d70c68ec6dcab">
+        <dex dex="/Users/apple/GitHub/EnergyCloud/app/build/intermediates/pre-dexed/debug/com.android.support-support-v13-25.0.0_f5fcfb65f7377a28c8945f81914d0f498559ff0a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/apple/GitHub/EnergyCloud/app/libs/baidumapapi_radar_v4_1_1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ec3b3b79fdcc8fe059676554e31053027043edf8">
+        <dex dex="/Users/apple/GitHub/EnergyCloud/app/build/intermediates/pre-dexed/debug/baidumapapi_radar_v4_1_1_516f69e746b58f1283ac617ed209cd1552be6313.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/apple/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/adapter-rxjava/2.1.0/693eddc23e87ab13f9cf5001707ce8e7e1d1ff01/adapter-rxjava-2.1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="693eddc23e87ab13f9cf5001707ce8e7e1d1ff01">
+        <dex dex="/Users/apple/GitHub/EnergyCloud/app/build/intermediates/pre-dexed/debug/adapter-rxjava-2.1.0_b6d6b7d8b89625392d84fdb71fcd0a73d7524002.jar" />
+    </item>
+
+</items>
