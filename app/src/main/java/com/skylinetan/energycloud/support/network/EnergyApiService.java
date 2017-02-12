@@ -6,6 +6,7 @@ import com.skylinetan.energycloud.bean.Domiantion;
 import com.skylinetan.energycloud.bean.Energy;
 import com.skylinetan.energycloud.bean.Equipment;
 import com.skylinetan.energycloud.bean.HttpWrapper;
+import com.skylinetan.energycloud.bean.Order;
 import com.skylinetan.energycloud.bean.User;
 import com.skylinetan.energycloud.support.Constants;
 
@@ -37,6 +38,7 @@ public interface EnergyApiService {
     @FormUrlEncoded
     @POST(Constants.API.REGISTER_REPAIR)
     Observable<HttpWrapper<Object>> registerRepair(@Field("phone") String phone, @Field("nick_name") String nickName, @Field("password") String password);
+
     //登录
     @FormUrlEncoded
     @POST(Constants.API.LOGIN)
@@ -63,7 +65,7 @@ public interface EnergyApiService {
     @FormUrlEncoded
     @POST(Constants.API.REPAIR_LIST)
     Observable<HttpWrapper<Object>> sendOrder(@Field("user_id") int userId, @Field("equipment_id") int equipmetId,
-                                              @Field("title") String title,@Field("content") String content);
+                                              @Field("title") String title, @Field("content") String content);
 
     //获取最近一小时设备运行状态
     @GET(Constants.API.BUILDING_NOW)
@@ -75,4 +77,7 @@ public interface EnergyApiService {
 
     @GET(Constants.API.BUILDING_MONITOR)
     Observable<HttpWrapper<List<AirCondition1>>> getAirCondition(@Query("num") String num);
+
+    @GET(Constants.API.USER_SEARCH)
+    Observable<HttpWrapper<List<Order>>> getUserSearch(@Query("page") int page, @Query("limit") int limit, @Query("user_id") int userId);
 }

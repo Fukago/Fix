@@ -53,5 +53,7 @@ public class Constants {
         public static final String DOMIANTION_LIST = "/domiantionlist";
         //添加维修清单
         public static final String REPAIR_LIST = "/repairlist/create";
+        //查看清单
+        public static final String USER_SEARCH="/repairlist/userSearch";
     }
 }

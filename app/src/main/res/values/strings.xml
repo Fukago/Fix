@@ -5,6 +5,7 @@
     <string name="action_settings">Settings</string>
     <string name="action_user">User</string>
     <string name="action_filter">Filter</string>
+    <string name="action_order">Order</string>
     <!-- bottom navigation -->
     <string name="action_home">首页</string>
     <string name="action_monitor">监测</string>

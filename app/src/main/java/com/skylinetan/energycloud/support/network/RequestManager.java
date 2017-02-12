@@ -7,6 +7,7 @@ import com.skylinetan.energycloud.bean.Domiantion;
 import com.skylinetan.energycloud.bean.Energy;
 import com.skylinetan.energycloud.bean.Equipment;
 import com.skylinetan.energycloud.bean.HttpWrapper;
+import com.skylinetan.energycloud.bean.Order;
 import com.skylinetan.energycloud.bean.User;
 import com.skylinetan.energycloud.support.Constants;
 
@@ -180,11 +181,23 @@ public enum RequestManager {
         emitObservable(observable, subscriber);
     }
 
+    public void getUserSearch(Subscriber<List<Order>> subscriber,int page,int limit, int userId){
+        Observable<List<Order>> observable = energyApiService.getUserSearch(page,limit,userId)
+                .map(new Func1<HttpWrapper<List<Order>>, List<Order>>() {
+                    @Override
+                    public List<Order> call(HttpWrapper<List<Order>> orderHttpWrapper) {
+                        return orderHttpWrapper.getData();
+                    }
+                });
+        emitObservable(observable, subscriber);
+    }
+
     private <T> Subscription emitObservable(Observable<T> o, Subscriber<T> s) {
         return o.subscribeOn(Schedulers.io())
                 .unsubscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(s);
     }
+
 }
 

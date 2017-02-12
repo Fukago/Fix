@@ -1,23 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+      xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
-        android:id="@+id/action_settings"
-        android:orderInCategory="100"
-        android:title="@string/action_settings"
-        app:showAsAction="never" />
+            android:id="@+id/action_settings"
+            android:orderInCategory="100"
+            android:title="@string/action_settings"
+            app:showAsAction="never"/>
 
     <item
-        android:id="@+id/action_filter"
-        android:icon="@mipmap/main_filter"
-        android:title="@string/action_filter"
-        app:showAsAction="always"
-        />
+            android:id="@+id/action_filter"
+            android:icon="@mipmap/main_filter"
+            android:title="@string/action_filter"
+            app:showAsAction="always"
+            />
 
     <item
-        android:id="@+id/action_user"
-        android:icon="@mipmap/main_user"
-        android:title="@string/action_user"
-        app:showAsAction="always"
-        />
+            android:id="@+id/action_user"
+            android:icon="@mipmap/main_user"
+            android:title="@string/action_user"
+            app:showAsAction="always"
+            />
+    <item
+            android:id="@+id/action_order"
+            android:icon="@mipmap/ic_analysis"
+            android:title="@string/action_order"
+            app:showAsAction="always"
+            />
 </menu>

@@ -131,6 +131,9 @@ public class MainActivity extends SilBaseActivity<IMainPresenter> implements IMa
             case R.id.action_user:
                 startActivity(new Intent(this, UserActivity.class));
                 break;
+            case R.id.action_order:
+                startActivity(new Intent(this, TotalOrderActivity.class));
+                break;
         }
         return super.onOptionsItemSelected(item);
     }
