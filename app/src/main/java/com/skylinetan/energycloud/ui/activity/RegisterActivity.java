@@ -11,6 +11,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -46,8 +48,16 @@ public class RegisterActivity extends AppCompatActivity {
     CountdownView registerCountDown;
     @BindView(R.id.register_code_tv)
     TextView registerCodeTv;
+    @BindView(R.id.administrator)
+    RadioButton administrator;
+    @BindView(R.id.maintenance)
+    RadioButton maintenance;
+    @BindView(R.id.rg_radiogroup)
+    RadioGroup rgRadiogroup;
 
-    private final long TIME = (long)60 * 1000;
+
+    private Boolean isAdministrator = null;
+    private final long TIME = (long) 60 * 1000;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -75,6 +85,19 @@ public class RegisterActivity extends AppCompatActivity {
                     }
                 })
                 .show(this, null);
+
+
+        rgRadiogroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+                if (i == administrator.getId()) {
+                    isAdministrator = true;
+                } else {
+                    isAdministrator = false;
+                }
+            }
+        });
+
 
         registerCodeTv.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -114,30 +137,51 @@ public class RegisterActivity extends AppCompatActivity {
         registerButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(!registerPassword.getText().toString().equals(registerConfirm.getText().toString()))
+                if (!registerPassword.getText().toString().equals(registerConfirm.getText().toString()))
                     Toast.makeText(RegisterActivity.this, "两次输入的密码不一致", Toast.LENGTH_SHORT).show();
                 RequestManager.getInstance().verifyCode(new Subscriber<HttpWrapper<Object>>() {
 
                     @Override
                     public void onCompleted() {
                         Toast.makeText(RegisterActivity.this, "验证信息成功", Toast.LENGTH_SHORT).show();
-                        RequestManager.getInstance().register(new Subscriber<HttpWrapper<Object>>() {
-                            @Override
-                            public void onCompleted() {
-                                startActivity(new Intent(RegisterActivity.this, LoginActivity.class));
-                                RegisterActivity.this.finish();
-                            }
+                        if (isAdministrator) {
+                            RequestManager.getInstance().register(new Subscriber<HttpWrapper<Object>>() {
+                                @Override
+                                public void onCompleted() {
+                                    startActivity(new Intent(RegisterActivity.this, LoginActivity.class));
+                                    RegisterActivity.this.finish();
+                                }
 
-                            @Override
-                            public void onError(Throwable e) {
+                                @Override
+                                public void onError(Throwable e) {
 
-                            }
+                                }
 
-                            @Override
-                            public void onNext(HttpWrapper<Object> objectHttpWrapper) {
+                                @Override
+                                public void onNext(HttpWrapper<Object> objectHttpWrapper) {
 
-                            }
-                        }, registerPhone.getText().toString(), nickName.getText().toString(), registerPassword.getText().toString());
+                                }
+                            }, registerPhone.getText().toString(), nickName.getText().toString(), registerPassword.getText().toString());
+                        }else {
+                            RequestManager.getInstance().registerRepair(new Subscriber<HttpWrapper<Object>>() {
+                                @Override
+                                public void onCompleted() {
+                                    startActivity(new Intent(RegisterActivity.this, LoginActivity.class));
+                                    RegisterActivity.this.finish();
+                                }
+
+                                @Override
+                                public void onError(Throwable e) {
+
+                                }
+
+                                @Override
+                                public void onNext(HttpWrapper<Object> objectHttpWrapper) {
+
+                                }
+                            }, registerPhone.getText().toString(), nickName.getText().toString(), registerPassword.getText().toString());
+
+                        }
                     }
 
                     @Override
@@ -151,6 +195,8 @@ public class RegisterActivity extends AppCompatActivity {
                     }
                 }, registerPhone.getText().toString(), registerCode.getText().toString());
             }
+
         });
+
     }
 }

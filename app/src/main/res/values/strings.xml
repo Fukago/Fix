@@ -28,4 +28,7 @@
     <string name="error_load">加载失败了哦~</string>
     <string name="empty_data">没有数据~</string>
 
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>

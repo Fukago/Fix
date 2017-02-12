@@ -21,11 +21,12 @@ public class Constants {
     //BUNDLE STRING
     public static final String ARGUMENTS_MAP_FRAGMENT = "arguments_map_fragment";
 
-    public static final class SP{
+    public static final class SP {
         public static final String LOGIN = "login";
+        public static final String ID = "id";
     }
 
-    public static final class API{
+    public static final class API {
         public static final String BASE_URL = "http://api.nofloat.cn";
         //获取验证码
         public static final String GET_CODE = "/verify";
@@ -33,6 +34,8 @@ public class Constants {
         public static final String VERIFY_CODE = "/checkVerify";
         //注册
         public static final String REGISTER = "/register";
+        //维修工注册
+        public static final String REGISTER_REPAIR = "/repairer/register";
         //登录
         public static final String LOGIN = "/login";
         //修改个人信息
@@ -46,5 +49,9 @@ public class Constants {
         //每个设备所有小时的能耗
         public static final String BUILDING_GOAL = "/building/goal";
         public static final String BUILDING_MONITOR = "/building/monitor";
+        //查询管理员清单
+        public static final String DOMIANTION_LIST = "/domiantionlist";
+        //添加维修清单
+        public static final String REPAIR_LIST = "/repairlist/create";
     }
 }

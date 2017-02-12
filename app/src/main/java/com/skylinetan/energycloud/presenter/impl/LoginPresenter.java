@@ -1,14 +1,10 @@
 package com.skylinetan.energycloud.presenter.impl;
 
 import android.content.Context;
-import android.content.Intent;
 
-import com.skylinetan.energycloud.bean.User;
 import com.skylinetan.energycloud.presenter.BasePresenter;
 import com.skylinetan.energycloud.presenter.ILoginPresenter;
 import com.skylinetan.energycloud.support.Constants;
-import com.skylinetan.energycloud.ui.activity.LoginActivity;
-import com.skylinetan.energycloud.ui.activity.MainActivity;
 import com.skylinetan.energycloud.utils.SPUtils;
 import com.skylinetan.energycloud.view.ILoginView;
 

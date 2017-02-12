@@ -26,14 +26,12 @@ import com.skylinetan.energycloud.R;
 import com.skylinetan.energycloud.bean.Building;
 import com.skylinetan.energycloud.bean.Energy;
 import com.skylinetan.energycloud.bean.Equipment;
-import com.skylinetan.energycloud.bean.MapInfo;
 import com.skylinetan.energycloud.presenter.BasePresenterFactory;
 import com.skylinetan.energycloud.presenter.PresenterFactory;
 import com.skylinetan.energycloud.presenter.impl.EnergyPresenter;
 import com.skylinetan.energycloud.support.Constants;
 import com.skylinetan.energycloud.support.network.RequestManager;
 import com.skylinetan.energycloud.ui.adapter.EquipmentAdapter;
-import com.skylinetan.energycloud.ui.adapter.MapInfoAdapter;
 import com.skylinetan.energycloud.ui.widget.DividerItemDecoration;
 import com.skylinetan.energycloud.view.IEnergyView;
 

@@ -2,13 +2,10 @@ package com.skylinetan.energycloud.ui.activity;
 
 import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
-import android.app.DatePickerDialog;
 import android.content.Intent;
-import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
-import android.support.annotation.RequiresApi;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
@@ -20,7 +17,6 @@ import android.view.animation.AccelerateInterpolator;
 import android.widget.DatePicker;
 import android.widget.ImageView;
 
-import com.afollestad.materialdialogs.MaterialDialog;
 import com.skylinetan.energycloud.R;
 import com.skylinetan.energycloud.bean.InfoBean;
 import com.skylinetan.energycloud.presenter.BasePresenterFactory;
@@ -29,13 +25,10 @@ import com.skylinetan.energycloud.presenter.PresenterFactory;
 import com.skylinetan.energycloud.presenter.impl.MainPresenter;
 import com.skylinetan.energycloud.support.Constants;
 import com.skylinetan.energycloud.support.method.ColorShowMethod;
-import com.skylinetan.energycloud.support.method.NoneShowMethod;
 import com.skylinetan.energycloud.utils.TransitionsHeleper;
 import com.skylinetan.energycloud.view.IMainView;
 
-import static android.R.attr.duration;
-
-public class MainActivity extends SilBaseActivity<IMainPresenter> implements IMainView, BottomNavigationView.OnNavigationItemSelectedListener , DatePicker.OnDateChangedListener{
+public class MainActivity extends SilBaseActivity<IMainPresenter> implements IMainView, BottomNavigationView.OnNavigationItemSelectedListener, DatePicker.OnDateChangedListener {
 
     //View部分
 
@@ -43,12 +36,13 @@ public class MainActivity extends SilBaseActivity<IMainPresenter> implements IMa
     private FragmentManager mFragmentManager;
     private BottomNavigationView bottomNavigationView;
     private AlertDialog mDateDialog;
+    private int Flag = 0;//默认第一页
 
     @SuppressWarnings("unchecked")
     @Override
     protected PresenterFactory createPresenterFactory() {
         MainPresenter mainPresenter = new MainPresenter();
-        return new BasePresenterFactory(this,mainPresenter);
+        return new BasePresenterFactory(this, mainPresenter);
     }
 
     @Override
@@ -101,20 +95,34 @@ public class MainActivity extends SilBaseActivity<IMainPresenter> implements IMa
         bottomNavigationView.setOnNavigationItemSelectedListener(this);
         FragmentTransaction fragmentTransaction = mFragmentManager.beginTransaction();
         getPresenter().hideFragments(fragmentTransaction);
-        getPresenter().showMainFragment(getIntent(), fragmentTransaction, R.id.main_container);
+        switch (Flag) {
+            case 0:
+                getPresenter().showMainFragment(getIntent(), fragmentTransaction, R.id.main_container);
+                break;
+            case 1:
+                getPresenter().showEquitFragment(fragmentTransaction, R.id.main_container);
+                break;
+            case 2:
+                getPresenter().showMonitorFragment(fragmentTransaction, R.id.main_container);
+                break;
+            case 3:
+                getPresenter().showAnalysisFragemnt(fragmentTransaction, R.id.main_container);
+                break;
+        }
         fragmentTransaction.commit();
     }
 
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu_main,menu);
+        getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
     }
 
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()){
+        switch (item.getItemId()) {
             case R.id.action_filter:
                 mDateDialog = new AlertDialog.Builder(this)
                         .setView(R.layout.dialog_date_picker)
@@ -131,15 +139,22 @@ public class MainActivity extends SilBaseActivity<IMainPresenter> implements IMa
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         FragmentTransaction fragmentTransaction = mFragmentManager.beginTransaction();
         getPresenter().hideFragments(fragmentTransaction);
-        switch (item.getItemId()){
+        switch (item.getItemId()) {
             case R.id.action_home:
-                getPresenter().showMainFragment(getIntent(),fragmentTransaction, R.id.main_container);
+                getPresenter().showMainFragment(getIntent(), fragmentTransaction, R.id.main_container);
+                Flag = 0;
+                break;
+            case R.id.action_equit:
+                getPresenter().showEquitFragment(fragmentTransaction, R.id.main_container);
+                Flag = 1;
                 break;
             case R.id.action_monitor:
                 getPresenter().showMonitorFragment(fragmentTransaction, R.id.main_container);
+                Flag = 2;
                 break;
             case R.id.action_analysis:
                 getPresenter().showAnalysisFragemnt(fragmentTransaction, R.id.main_container);
+                Flag = 3;
                 break;
             default:
                 break;

@@ -5,6 +5,12 @@
         android:title="@string/action_home"
         android:icon="@mipmap/main_home" />
     <item
+        android:id="@+id/action_equit"
+        android:title="设备"
+        android:icon="@mipmap/main_home"/>
+
+
+    <item
         android:id="@+id/action_monitor"
         android:title="@string/action_monitor"
         android:icon="@mipmap/main_monitor" />

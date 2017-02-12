@@ -7,9 +7,10 @@ import android.support.v4.app.FragmentTransaction;
 
 import com.skylinetan.energycloud.presenter.BasePresenter;
 import com.skylinetan.energycloud.presenter.IMainPresenter;
-import com.skylinetan.energycloud.ui.fragment.RecordFragment;
+import com.skylinetan.energycloud.ui.fragment.EquitFragment;
 import com.skylinetan.energycloud.ui.fragment.MapFragment;
 import com.skylinetan.energycloud.ui.fragment.MonitorFragment;
+import com.skylinetan.energycloud.ui.fragment.RecordFragment;
 import com.skylinetan.energycloud.view.IMainView;
 
 /**
@@ -20,6 +21,7 @@ public class MainPresenter extends BasePresenter<IMainView> implements IMainPres
     private MapFragment mMapFragment;
     private Fragment mMonitorFragment;
     private Fragment mRecordFragment;
+    private Fragment mEquitFragment;
 
     @Override
     public void showMainFragment(Intent intent, FragmentTransaction fragmentTransaction, @IdRes int resId) {
@@ -52,6 +54,16 @@ public class MainPresenter extends BasePresenter<IMainView> implements IMainPres
     }
 
     @Override
+    public void showEquitFragment(FragmentTransaction fragmentTransaction, @IdRes int resId) {
+        if(mEquitFragment == null){
+            mEquitFragment  = new EquitFragment();
+            fragmentTransaction.add(resId,mEquitFragment);
+        }else {
+            fragmentTransaction.show(mEquitFragment);
+        }
+    }
+
+    @Override
     public void hideFragments(FragmentTransaction transaction) {
         if(mMapFragment != null){
             transaction.hide(mMapFragment);
@@ -61,6 +73,9 @@ public class MainPresenter extends BasePresenter<IMainView> implements IMainPres
         }
         if(mRecordFragment != null){
             transaction.hide(mRecordFragment);
+        }
+        if(mEquitFragment != null){
+            transaction.hide(mEquitFragment);
         }
     }
 }
