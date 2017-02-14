@@ -1,21 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/action_home"
-        android:title="@string/action_home"
-        android:icon="@mipmap/main_home" />
+            android:id="@+id/action_home"
+            android:icon="@mipmap/main_home"
+            android:title="@string/action_home"/>
     <item
-        android:id="@+id/action_equit"
-        android:title="设备"
-        android:icon="@mipmap/main_home"/>
+            android:id="@+id/action_equit"
+            android:icon="@mipmap/main_home"
+            android:title="设备"/>
 
 
     <item
-        android:id="@+id/action_monitor"
-        android:title="@string/action_monitor"
-        android:icon="@mipmap/main_monitor" />
+            android:id="@+id/action_monitor"
+            android:icon="@mipmap/main_monitor"
+            android:title="@string/action_monitor"/>
     <item
-        android:id="@+id/action_analysis"
-        android:title="@string/action_analysis"
-        android:icon="@mipmap/main_chart" />
+            android:id="@+id/action_analysis"
+            android:icon="@mipmap/main_chart"
+            android:title="@string/action_analysis"/>
+    <item
+            android:id="@+id/action_order"
+            android:icon="@mipmap/main_chart"
+            android:title="抢单"/>
 </menu>

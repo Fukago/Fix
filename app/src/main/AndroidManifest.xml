@@ -46,6 +46,12 @@
         </activity>
         <activity android:name=".ui.activity.TotalOrderActivity">
         </activity>
+        <activity android:name=".ui.activity.RemarkActivity">
+        </activity>
+        <activity android:name=".ui.activity.CheckActivity">
+        </activity>
+        <activity android:name=".ui.activity.GrabActivity">
+        </activity>
     </application>
 
 </manifest>

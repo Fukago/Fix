@@ -64,6 +64,8 @@ public class TotalOrderActivity extends SilBaseActivity<ITotalOrderPresenter> im
         orderRecyclerView= (RecyclerView) findViewById(R.id.order_recycler_view);
         orderSwipeRefreshLayout= (SwipeRefreshLayout) findViewById(R.id.order_swipe_refresh_layout);
         mToolbar= (Toolbar) findViewById(R.id.toolbar);
+        orderRecyclerView.setLayoutManager(new LinearLayoutManager(this));
+        orderRecyclerView.addItemDecoration(new DividerItemDecoration(this, DividerItemDecoration.VERTICAL_LIST));
     }
 
     @Override
@@ -89,9 +91,7 @@ public class TotalOrderActivity extends SilBaseActivity<ITotalOrderPresenter> im
     public void setData(List<Order> data) {
         errorView.setVisibility(View.GONE);
         loadingView.setVisibility(View.GONE);
-        mOrderAdapter = new OrderAdapter(this, R.layout.item_order, data);
-        orderRecyclerView.setLayoutManager(new LinearLayoutManager(this));
-        orderRecyclerView.addItemDecoration(new DividerItemDecoration(this, DividerItemDecoration.VERTICAL_LIST));
+        mOrderAdapter = new OrderAdapter(this, R.layout.item_order, data,false);
         orderRecyclerView.setAdapter(mOrderAdapter);
     }
 

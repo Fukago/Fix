@@ -11,7 +11,7 @@ import com.skylinetan.energycloud.utils.SPUtils;
 /**
  * Created by skylineTan on 16/12/13.
  */
-public class LaunchActivity extends AppCompatActivity{
+public class LaunchActivity extends AppCompatActivity {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -20,9 +20,16 @@ public class LaunchActivity extends AppCompatActivity{
             @Override
             public void run() {
                 String phone = (String) SPUtils.get(LaunchActivity.this, Constants.SP.LOGIN, "");
-                if(!phone.equals("")){
-                    startActivity(new Intent(LaunchActivity.this, MainActivity.class));
-                }else {
+                Boolean isAdministrator = (Boolean) SPUtils.get(LaunchActivity.this, Constants.SP.ISADMINISTRATER, true);
+                if (!phone.equals("")) {
+                    if (isAdministrator == null) {
+                        startActivity(new Intent(LaunchActivity.this, LoginActivity.class));
+                    } else if (isAdministrator) {
+                        startActivity(new Intent(LaunchActivity.this, MainActivity.class));
+                    } else {
+                        startActivity(new Intent(LaunchActivity.this, GrabActivity.class));
+                    }
+                } else {
                     startActivity(new Intent(LaunchActivity.this, LoginActivity.class));
                 }
                 finish();

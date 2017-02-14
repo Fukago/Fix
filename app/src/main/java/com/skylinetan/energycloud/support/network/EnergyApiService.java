@@ -44,14 +44,30 @@ public interface EnergyApiService {
     @POST(Constants.API.LOGIN)
     Observable<HttpWrapper<Object>> login(@Field("phone") String phone, @Field("password") String password);
 
+    //登陆维修工
+    @FormUrlEncoded
+    @POST(Constants.API.LOGIN_REPAIR)
+    Observable<HttpWrapper<Object>> loginRepair(@Field("phone") String phone, @Field("password") String password);
+
     //修改个人信息
     @FormUrlEncoded
     @POST(Constants.API.UPDATE)
     Observable<HttpWrapper<Object>> update(@Field("phone") String phone, @Field("nick_name") String nickName);
 
+    //修改维修工个人信息
+    @FormUrlEncoded
+    @POST(Constants.API.UPDATE_REPAIR)
+    Observable<HttpWrapper<Object>> updateRepair(@Field("phone") String phone, @Field("nick_name") String nickName);
+
+
     //查询个人信息
     @GET(Constants.API.SEARCH)
     Observable<HttpWrapper<User>> search(@Query("phone") String phone);
+
+    //查询维修公个人信息
+    @GET(Constants.API.SEARCH_REPAIR)
+    Observable<HttpWrapper<User>> searchRepair(@Query("phone") String phone);
+
 
     //获取建筑物信息
     @GET(Constants.API.BUILDING_SEARCH)
@@ -78,6 +94,18 @@ public interface EnergyApiService {
     @GET(Constants.API.BUILDING_MONITOR)
     Observable<HttpWrapper<List<AirCondition1>>> getAirCondition(@Query("num") String num);
 
+    //查询管理员自己发布的清单
     @GET(Constants.API.USER_SEARCH)
     Observable<HttpWrapper<List<Order>>> getUserSearch(@Query("page") int page, @Query("limit") int limit, @Query("user_id") int userId);
+
+    //评价维修工
+    @POST(Constants.API.REMARK_CONTENT)
+    Observable<HttpWrapper<Object>> sendRemark(@Field("id") int Id, @Field("rank_star") int rankStar,
+                                               @Field("remark_content") String remarkContent);
+
+    //维修工查看有没有订单
+    @GET(Constants.API.GRAB_ORDER)
+    Observable<HttpWrapper<List<Order>>> getRepairSearch(@Query("page") int page, @Query("limit") int limit);
+
+
 }

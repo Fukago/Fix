@@ -39,21 +39,21 @@
     </item>
     <item
         is-multidex="false"
-        jar="/Users/apple/GitHub/Fix/app/build/intermediates/exploded-aar/com.jakewharton/butterknife/8.4.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="a07818a1ecabdb149998823429cce555af4b9cba">
-        <dex dex="/Users/apple/GitHub/Fix/app/build/intermediates/pre-dexed/debug/com.jakewharton-butterknife-8.4.0_78755cef76de6f16a03e3a6005d5ceff4184883c.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="/Users/apple/GitHub/Fix/app/build/intermediates/exploded-aar/com.android.support/support-v13/25.0.0/jars/libs/internal_impl-25.0.0.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.0"
         sha1="67355078cd30daae43f62ba47a4663ee6edb976e">
         <dex dex="/Users/apple/GitHub/Fix/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.0_0adb4310d98c8d2acde853df35775a4020d0c82d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/apple/GitHub/Fix/app/build/intermediates/exploded-aar/com.jakewharton/butterknife/8.4.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a07818a1ecabdb149998823429cce555af4b9cba">
+        <dex dex="/Users/apple/GitHub/Fix/app/build/intermediates/pre-dexed/debug/com.jakewharton-butterknife-8.4.0_78755cef76de6f16a03e3a6005d5ceff4184883c.jar" />
     </item>
     <item
         is-multidex="false"
@@ -237,21 +237,21 @@
     </item>
     <item
         is-multidex="false"
-        jar="/Users/apple/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/retrofit/2.1.0/2de7cd8b95b7021b1d597f049bcb422055119f2c/retrofit-2.1.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="2de7cd8b95b7021b1d597f049bcb422055119f2c">
-        <dex dex="/Users/apple/GitHub/Fix/app/build/intermediates/pre-dexed/debug/retrofit-2.1.0_ea4d76ec59af5042e93ce876c8703b206a344f11.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="/Users/apple/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-urlconnection/3.4.1/63994437f62bc861bc20c605d12962f7246116d1/okhttp-urlconnection-3.4.1.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.0"
         sha1="63994437f62bc861bc20c605d12962f7246116d1">
         <dex dex="/Users/apple/GitHub/Fix/app/build/intermediates/pre-dexed/debug/okhttp-urlconnection-3.4.1_7aac5dfe88e60bc6a1ddfd74e37cc18fa11d9546.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/apple/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/retrofit/2.1.0/2de7cd8b95b7021b1d597f049bcb422055119f2c/retrofit-2.1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="2de7cd8b95b7021b1d597f049bcb422055119f2c">
+        <dex dex="/Users/apple/GitHub/Fix/app/build/intermediates/pre-dexed/debug/retrofit-2.1.0_ea4d76ec59af5042e93ce876c8703b206a344f11.jar" />
     </item>
     <item
         is-multidex="false"
@@ -381,21 +381,21 @@
     </item>
     <item
         is-multidex="false"
-        jar="/Users/apple/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/adapter-rxjava/2.1.0/693eddc23e87ab13f9cf5001707ce8e7e1d1ff01/adapter-rxjava-2.1.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="693eddc23e87ab13f9cf5001707ce8e7e1d1ff01">
-        <dex dex="/Users/apple/GitHub/Fix/app/build/intermediates/pre-dexed/debug/adapter-rxjava-2.1.0_b6d6b7d8b89625392d84fdb71fcd0a73d7524002.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="/Users/apple/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.1.1/support-annotations-25.1.1.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.0"
         sha1="b59b6ee8d6ecc03e672d253800430343493a6ed8">
         <dex dex="/Users/apple/GitHub/Fix/app/build/intermediates/pre-dexed/debug/support-annotations-25.1.1_1906e8e69e1a5e8039acf92067e3f4e1e1759fb2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/apple/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/adapter-rxjava/2.1.0/693eddc23e87ab13f9cf5001707ce8e7e1d1ff01/adapter-rxjava-2.1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="693eddc23e87ab13f9cf5001707ce8e7e1d1ff01">
+        <dex dex="/Users/apple/GitHub/Fix/app/build/intermediates/pre-dexed/debug/adapter-rxjava-2.1.0_b6d6b7d8b89625392d84fdb71fcd0a73d7524002.jar" />
     </item>
     <item
         is-multidex="false"

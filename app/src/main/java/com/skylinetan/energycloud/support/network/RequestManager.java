@@ -81,20 +81,28 @@ public enum RequestManager {
         emitObservable(observable, subscriber);
     }
 
-    //登录
+    //注册
     public void register(Subscriber<HttpWrapper<Object>> subscriber, String phone, String nickName, String password) {
         Observable<HttpWrapper<Object>> observable = energyApiService.register(phone, nickName, password);
         emitObservable(observable, subscriber);
     }
-    //注册管理员
+
+
+    //注册维修工
     public void registerRepair(Subscriber<HttpWrapper<Object>> subscriber, String phone, String nickName, String password) {
-        Observable<HttpWrapper<Object>> observable = energyApiService.register(phone, nickName, password);
+        Observable<HttpWrapper<Object>> observable = energyApiService.registerRepair(phone, nickName, password);
         emitObservable(observable, subscriber);
     }
 
-    //注册
+    //登录
     public void login(Subscriber<HttpWrapper<Object>> subscriber, String phone, String password) {
         Observable<HttpWrapper<Object>> observable = energyApiService.login(phone, password);
+        emitObservable(observable, subscriber);
+    }
+
+    //登录维修工
+    public void rloginRepair(Subscriber<HttpWrapper<Object>> subscriber, String phone, String password) {
+        Observable<HttpWrapper<Object>> observable = energyApiService.loginRepair(phone, password);
         emitObservable(observable, subscriber);
     }
 
@@ -105,15 +113,41 @@ public enum RequestManager {
         emitObservable(observable, subscriber);
     }
 
+
     //修改个人信息
     public void update(Subscriber<HttpWrapper<Object>> subscriber, String phone, String nickName) {
         Observable<HttpWrapper<Object>> observable = energyApiService.update(phone, nickName);
         emitObservable(observable, subscriber);
     }
 
+    //修改维修工个人信息
+    public void updateRepair(Subscriber<HttpWrapper<Object>> subscriber, String phone, String nickName) {
+        Observable<HttpWrapper<Object>> observable = energyApiService.updateRepair(phone, nickName);
+        emitObservable(observable, subscriber);
+    }
+
+    //评价维修工
+    public void sendRemark(Subscriber<HttpWrapper<Object>> subscriber, int id, int remarkStar, String remarkContent) {
+        Observable<HttpWrapper<Object>> observable = energyApiService.sendRemark(id, remarkStar, remarkContent);
+        emitObservable(observable, subscriber);
+    }
+
+
     //查询个人信息
     public void search(Subscriber<User> subscriber, String phone) {
         Observable<User> observable = energyApiService.search(phone)
+                .map(new Func1<HttpWrapper<User>, User>() {
+                    @Override
+                    public User call(HttpWrapper<User> userHttpWrapper) {
+                        return userHttpWrapper.getData();
+                    }
+                });
+        emitObservable(observable, subscriber);
+    }
+
+    //查询维修工个人信息
+    public void searchRepair(Subscriber<User> subscriber, String phone) {
+        Observable<User> observable = energyApiService.searchRepair(phone)
                 .map(new Func1<HttpWrapper<User>, User>() {
                     @Override
                     public User call(HttpWrapper<User> userHttpWrapper) {
@@ -170,6 +204,7 @@ public enum RequestManager {
         emitObservable(observable, subscriber);
     }
 
+    //管理员清单
     public void getDomiantionList(Subscriber<List<Domiantion>> subscriber, int userId) {
         Observable<List<Domiantion>> observable = energyApiService.getDomiantion(userId)
                 .map(new Func1<HttpWrapper<List<Domiantion>>, List<Domiantion>>() {
@@ -181,8 +216,21 @@ public enum RequestManager {
         emitObservable(observable, subscriber);
     }
 
-    public void getUserSearch(Subscriber<List<Order>> subscriber,int page,int limit, int userId){
-        Observable<List<Order>> observable = energyApiService.getUserSearch(page,limit,userId)
+    //查询管理员自己发布的清单
+    public void getUserSearch(Subscriber<List<Order>> subscriber, int page, int limit, int userId) {
+        Observable<List<Order>> observable = energyApiService.getUserSearch(page, limit, userId)
+                .map(new Func1<HttpWrapper<List<Order>>, List<Order>>() {
+                    @Override
+                    public List<Order> call(HttpWrapper<List<Order>> orderHttpWrapper) {
+                        return orderHttpWrapper.getData();
+                    }
+                });
+        emitObservable(observable, subscriber);
+    }
+
+    //维修工查看有没有订单
+    public void getRepairSearch(Subscriber<List<Order>> subscriber, int page, int limit) {
+        Observable<List<Order>> observable = energyApiService.getRepairSearch(page, limit)
                 .map(new Func1<HttpWrapper<List<Order>>, List<Order>>() {
                     @Override
                     public List<Order> call(HttpWrapper<List<Order>> orderHttpWrapper) {

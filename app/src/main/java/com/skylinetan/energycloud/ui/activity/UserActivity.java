@@ -2,14 +2,11 @@ package com.skylinetan.energycloud.ui.activity;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.EditText;
-import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -37,7 +34,7 @@ public class UserActivity extends AppCompatActivity {
     TextView userNickName;
     @BindView(R.id.user_phone)
     TextView userPhone;
-
+    private Boolean isAdministrator = null;
     private User mUser;
 
     @Override
@@ -46,26 +43,53 @@ public class UserActivity extends AppCompatActivity {
         setContentView(R.layout.activity_user);
         ButterKnife.bind(this);
         initViewAndEvent();
-        RequestManager.getInstance().search(new Subscriber<User>() {
-            @Override
-            public void onCompleted() {
+        isAdministrator = (Boolean) SPUtils.get(UserActivity.this, Constants.SP.ISADMINISTRATER, true);
+        if (isAdministrator == null) {
+            Toast.makeText(UserActivity.this, "发生未知错误，请尝试清空数据", Toast.LENGTH_SHORT).show();
+        } else if (isAdministrator) {
+            RequestManager.getInstance().search(new Subscriber<User>() {
+                @Override
+                public void onCompleted() {
 
-            }
+                }
 
-            @Override
-            public void onError(Throwable e) {
+                @Override
+                public void onError(Throwable e) {
 
-            }
+                }
 
-            @Override
-            public void onNext(User user) {
-                mUser = new User();
-                mUser.setNick_name(user.getNick_name());
-                mUser.setPhone(user.getPhone());
-                userNickName.setText(user.getNick_name());
-                userPhone.setText(user.getPhone());
-            }
-        }, (String) SPUtils.get(this, Constants.SP.LOGIN, ""));
+                @Override
+                public void onNext(User user) {
+                    mUser = new User();
+                    mUser.setNick_name(user.getNick_name());
+                    mUser.setPhone(user.getPhone());
+                    userNickName.setText(user.getNick_name());
+                    userPhone.setText(user.getPhone());
+                }
+            }, (String) SPUtils.get(this, Constants.SP.LOGIN, ""));
+        } else {
+            RequestManager.getInstance().searchRepair(new Subscriber<User>() {
+                @Override
+                public void onCompleted() {
+
+                }
+
+                @Override
+                public void onError(Throwable e) {
+
+                }
+
+                @Override
+                public void onNext(User user) {
+                    mUser = new User();
+                    mUser.setNick_name(user.getNick_name());
+                    mUser.setPhone(user.getPhone());
+                    userNickName.setText(user.getNick_name());
+                    userPhone.setText(user.getPhone());
+                }
+            }, (String) SPUtils.get(this, Constants.SP.LOGIN, ""));
+        }
+
     }
 
     @Override
@@ -113,24 +137,48 @@ public class UserActivity extends AppCompatActivity {
         editInfoSave.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                RequestManager.getInstance().update(new Subscriber<HttpWrapper<Object>>() {
-                    @Override
-                    public void onCompleted() {
-                        dialog.dismiss();
-                        userNickName.setText(editInfoName.getText().toString());
-                        Toast.makeText(UserActivity.this,"修改信息成功！",Toast.LENGTH_SHORT).show();
-                    }
+                if (isAdministrator == null) {
+                    Toast.makeText(UserActivity.this, "发生未知错误，请尝试清空数据", Toast.LENGTH_SHORT).show();
+                } else if (isAdministrator) {
+                    RequestManager.getInstance().update(new Subscriber<HttpWrapper<Object>>() {
+                        @Override
+                        public void onCompleted() {
+                            dialog.dismiss();
+                            userNickName.setText(editInfoName.getText().toString());
+                            Toast.makeText(UserActivity.this, "修改信息成功！", Toast.LENGTH_SHORT).show();
+                        }
 
-                    @Override
-                    public void onError(Throwable e) {
-                        Log.e("tzy","修改信息失败，原因："+e.getMessage());
-                    }
+                        @Override
+                        public void onError(Throwable e) {
+                            Log.e("tzy", "修改信息失败，原因：" + e.getMessage());
+                        }
 
-                    @Override
-                    public void onNext(HttpWrapper<Object> objectHttpWrapper) {
+                        @Override
+                        public void onNext(HttpWrapper<Object> objectHttpWrapper) {
 
-                    }
-                }, editInfoNum.getText().toString(), editInfoName.getText().toString());
+                        }
+                    }, editInfoNum.getText().toString(), editInfoName.getText().toString());
+                } else {
+                    RequestManager.getInstance().updateRepair(new Subscriber<HttpWrapper<Object>>() {
+                        @Override
+                        public void onCompleted() {
+                            dialog.dismiss();
+                            userNickName.setText(editInfoName.getText().toString());
+                            Toast.makeText(UserActivity.this, "修改信息成功！", Toast.LENGTH_SHORT).show();
+                        }
+
+                        @Override
+                        public void onError(Throwable e) {
+                            Log.e("tzy", "修改信息失败，原因：" + e.getMessage());
+                        }
+
+                        @Override
+                        public void onNext(HttpWrapper<Object> objectHttpWrapper) {
+
+                        }
+                    }, editInfoNum.getText().toString(), editInfoName.getText().toString());
+                }
+
             }
         });
 

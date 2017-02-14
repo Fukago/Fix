@@ -144,7 +144,11 @@ public class RegisterActivity extends AppCompatActivity {
                     @Override
                     public void onCompleted() {
                         Toast.makeText(RegisterActivity.this, "验证信息成功", Toast.LENGTH_SHORT).show();
-                        if (isAdministrator) {
+                        if (isAdministrator == null) {
+
+                            Toast.makeText(RegisterActivity.this, "请选择注册为管理员或者维修工", Toast.LENGTH_SHORT).show();
+
+                        } else if (isAdministrator) {
                             RequestManager.getInstance().register(new Subscriber<HttpWrapper<Object>>() {
                                 @Override
                                 public void onCompleted() {
@@ -162,7 +166,7 @@ public class RegisterActivity extends AppCompatActivity {
 
                                 }
                             }, registerPhone.getText().toString(), nickName.getText().toString(), registerPassword.getText().toString());
-                        }else {
+                        } else {
                             RequestManager.getInstance().registerRepair(new Subscriber<HttpWrapper<Object>>() {
                                 @Override
                                 public void onCompleted() {
